@@ -8,13 +8,13 @@ export default function NavBar() {
       <div>
         <ul className="nav">
           <li>
-            <NavLink to="/screen/Welcome">Welcome</NavLink>
+            <NavLink to="/">Welcome</NavLink>
           </li>
           <li>
-            <NavLink to="/screen/Login">Login</NavLink>
+            <NavLink to="/Login">Login</NavLink>
           </li>
           <li>
-            <NavLink to="/screen/Register">Register</NavLink>
+            <NavLink to="/Register">Register</NavLink>
           </li>
         </ul>
       </div>
