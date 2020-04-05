@@ -6,3 +6,15 @@
 ul {
   list-style: none;
 }
+
+footer {
+  position: absolute;
+  bottom: 0vh;
+}
+
+/* #root {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */

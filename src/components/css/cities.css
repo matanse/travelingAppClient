@@ -1,0 +1,50 @@
+button {
+  border: none;
+  background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.citiesPicBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.picCityRow {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cityPic {
+  margin: 5px;
+  width: 170px;
+  height: 170px;
+}
+
+#city1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lawngreen;
+}
+#city2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lawngreen;
+}
+#city3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lawngreen;
+}
+#city4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
