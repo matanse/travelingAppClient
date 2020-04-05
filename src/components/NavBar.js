@@ -1,26 +1,33 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { Component } from "react";
 import "./css/NavBar.css";
+import DropdownSideBar from "./DropdownSideBar";
+import ProfileImg from "../img/profile_logo.png";
+import menu from "../img/img menu.png";
+// import PropTypes from "prop-types";
 
-export default function NavBar() {
-  return (
-    <div className="container">
+export default class NavBar extends Component {
+  render() {
+    return (
       <div>
-        <ul className="nav">
-          <li>
-            <NavLink to="/">Welcome</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Login">Login</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Register">Register</NavLink>
-          </li>
-        </ul>
+        <div className="container">
+          <div className="profileMenu">
+            <button className="dropbtn" onClick={this.props.toggleShowDropdown}>
+              <img src={ProfileImg} alt="ProfileImg" />
+            </button>
+            {this.props.showDropdown ? (
+              <DropdownSideBar
+                toggleShowDropdown={this.props.toggleShowDropdown}
+              />
+            ) : null}
+          </div>
+
+          <div className="menu">
+            <button className="dropbtn" onClick={this.props.toggleShowDropdown}>
+              <img src={menu} alt="menu" />
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="logo">
-        <img src="../public/MYtineraryLogo.png" alt="" />
-      </div>
-    </div>
-  );
+    );
+  }
 }

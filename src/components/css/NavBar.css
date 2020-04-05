@@ -5,31 +5,43 @@
   background-color: #b46524;
 }
 
-.nav {
-  position: relative;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
-}
-
-ul {
-  list-style: none;
-}
-
-.nav > li {
+.dropDown > li {
   margin: 3px;
   padding: 10px;
   border: #991e1e 2px solid;
   border-radius: 20px;
 }
 
-.nav > li:hover {
+.dropDown > li:hover {
   background-color: #525f1a;
 }
 
-.nav > li > a {
+.dropDown > li > a {
   font-size: 3vw;
   padding: 10px;
   text-decoration: none;
   color: #991e1e;
+}
+
+.dropbtn {
+  background-color: #b46524;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn > img {
+  width: 6vw;
+  max-width: 70px;
+}
+
+.dropDown {
+  position: absolute;
+  background-color: #b46524;
+  top: 50px;
+}
+
+.profileMenu {
+  display: flex;
+  flex-direction: column;
 }
