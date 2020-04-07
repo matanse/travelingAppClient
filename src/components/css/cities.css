@@ -17,34 +17,20 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: white;
 }
 
 .cityPic {
   margin: 5px;
-  width: 170px;
-  height: 170px;
+  width: 30vw;
+  height: 19vw;
+  max-width: 250px;
+  max-height: 135px;
 }
 
-#city1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lawngreen;
+.carousel .control-dots {
+  bottom: -33px;
 }
-#city2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lawngreen;
-}
-#city3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lawngreen;
-}
-#city4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel .slide {
+  background-color: white;
 }
