@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./css/App.css";
 import "./css/content.css";
 import Header from "./components/Header";
@@ -10,7 +10,7 @@ import Cities from "./components/Cities";
 
 class App extends Component {
   state = {
-    showDropdown: false
+    showDropdown: false,
   };
 
   toggleShowDropdown = () => {
@@ -26,12 +26,12 @@ class App extends Component {
             showDropdown={this.state.showDropdown}
           />
         </header>
-        <div className="content">
+        <Switch className="content">
           <Route exact path="/" component={Welcome} />
           <Route path="/Login" component={Login} />
           <Route path="/Register" component={Register} />
-        </div>
-        <footer className="cities">
+        </Switch>
+        <footer className="cities" style={{ width: "100vw" }}>
           <Cities />
         </footer>
       </BrowserRouter>
