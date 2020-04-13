@@ -1,38 +1,54 @@
 import React from "react";
-import "./css/carosel.css";
+// import PicParis from "../img/Paris.jpg";
 
-export default function CitiesFirst() {
+export default function CitiesFirst(props) {
+  const cities = props.cities;
   return (
     <div className="citiesPicBtn">
       <div className="picCityRow">
         <button>
-          <div className="cityPic" id="city1">
-            <h2 style={{ backgroundColor: "white" }}>{city1}</h2>
+          <div
+            className="cityPic"
+            style={{
+              backgroundImage: `url(${cities[0].pic})`,
+            }}
+          >
+            <h2 style={{ backgroundColor: "white" }}>{cities[0].name}</h2>
           </div>
         </button>
         <button>
-          <div className="cityPic" id="city2">
-            <h2 style={{ backgroundColor: "white" }}>{city2}</h2>
+          <div
+            className="cityPic"
+            style={{
+              backgroundImage: `url(${cities[1].pic})`,
+            }}
+          >
+            <h2 style={{ backgroundColor: "white" }}>{cities[1].name}</h2>
           </div>
         </button>
       </div>
       <div className="picCityRow">
         <button>
-          <div className="cityPic" id="city3">
-            <h2 style={{ backgroundColor: "white" }}>{city3}</h2>
+          <div
+            className="cityPic"
+            style={{
+              backgroundImage: `url(${cities[2].pic})`,
+            }}
+          >
+            <h2 style={{ backgroundColor: "white" }}>{cities[2].name}</h2>
           </div>
         </button>
         <button>
-          <div className="cityPic" id="city4">
-            <h2 style={{ backgroundColor: "white" }}>{city4}</h2>
+          <div
+            className="cityPic"
+            style={{
+              backgroundImage: `url(${cities[3].pic})`,
+            }}
+          >
+            <h2 style={{ backgroundColor: "white" }}>{cities[3].name}</h2>
           </div>
         </button>
       </div>
     </div>
   );
 }
-
-const city1 = "Paris";
-const city2 = "Rome";
-const city3 = "Berlin";
-const city4 = "New-york";

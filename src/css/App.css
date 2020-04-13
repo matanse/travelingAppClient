@@ -7,14 +7,9 @@ ul {
   list-style: none;
 }
 
-footer {
-  position: absolute;
-  bottom: 0vh;
-}
-
-/* #root {
-  height: max-content;
+body > div {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
+}

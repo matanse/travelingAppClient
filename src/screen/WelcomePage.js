@@ -9,7 +9,7 @@ export default function WelcomePage() {
         cities
       </h2>
       <img
-        style={{ margin: "80px 0 0 0", height: "80px", width: "80px" }}
+        style={{ margin: "80px 0 40px 0", height: "80px", width: "80px" }}
         src={rightClick}
         alt=""
       />
